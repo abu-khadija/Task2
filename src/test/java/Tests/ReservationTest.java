@@ -17,7 +17,7 @@ public class ReservationTest extends TestBase{
         r.Passenger_details();
 
 
-        //Assertionn
+        //Assertion
         String Url = TestBase.driver.getCurrentUrl();
         Assert.assertEquals(Url,"https://ksrtc.in/oprs-web/booking/revamp/paxInfo.do");
 
