@@ -19,10 +19,6 @@ public class BookingTicket extends PageBase {
 
 
 
-//    private final By Leaving_from = By.id("fromPlaceName");
-//
-//
-//    private final By Going_To = By.id("toPlaceName");
 
     //Choose arrival date
     private final By Arrive_Date = By.xpath("//*[@id=\"ui-datepicker-div\"]/table/tbody/tr[5]/td[3]");
@@ -40,20 +36,6 @@ public class BookingTicket extends PageBase {
         Choose.click();
 
 
-
-
-////        //select  Leaving  From
-////        driver.findElement(Leaving_from).sendKeys("CHIKKAMAGALURU");
-////        Thread.sleep(1000);
-////
-////        driver.findElement(Leaving_from).sendKeys(Keys.ENTER);
-////        Thread.sleep(1000);
-////        //driver.findElement(Leaving_from).sendKeys(Keys.TAB);
-//
-//        //Select Going To
-//        driver.findElement(Going_To).sendKeys("BENGALURU", Keys.ENTER);
-//        driver.findElement(Going_To).sendKeys(Keys.ENTER);
-//        driver.findElement(Going_To).sendKeys(Keys.TAB);
 
 
         //Choose arrive date

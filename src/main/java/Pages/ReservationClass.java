@@ -15,7 +15,7 @@ public class ReservationClass extends PageBase {
     //WebElement Select_Seat = driver.findElement(By.id("SrvcSelectBtnForward0"));
     private final By Select = By.id("SrvcSelectBtnForward0");
 
-    private final By Seat = By.id("Forward2");
+    private final By Seat = By.id("Forward48");
 
     private final By BoardingPoint = By.id("Forward-1467550949362");
 
@@ -46,10 +46,9 @@ public class ReservationClass extends PageBase {
 
 
 
-
+    //Booking the Seat
     public void Reservation(){
 
-       // js.executeScript("arguments[0].scrollIntoView();", Select);
         JavascriptExecutor js = (JavascriptExecutor) driver;
 
         js.executeScript("arguments[0].click();",driver.findElement(Select));
@@ -71,6 +70,10 @@ public class ReservationClass extends PageBase {
 
     }
 
+
+
+    //-	Fill the “Customer” and “Passenger” details
+    //  *could be better With @DataProvider*
     public void Passenger_details() throws InterruptedException {
         driver.findElement(MobileNumber).sendKeys("6789125987");
         driver.findElement(Email).sendKeys("kdnv@gkf.com");
@@ -83,10 +86,5 @@ public class ReservationClass extends PageBase {
         driver.findElement(MakePayment).click();
         Thread.sleep(3000);
 
-
-
-
-
     }
-
 }

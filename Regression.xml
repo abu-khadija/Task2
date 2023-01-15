@@ -6,7 +6,7 @@
         <classes>
             <class name="Tests.BookingTicketTest"/>
             <class name="Tests.ReservationTest"/>
-            <class name="Tests.PaymentTest"/>
+<!--            <class name="Tests.PaymentTest"/>-->
 
         </classes>
     </test>

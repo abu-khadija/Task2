@@ -9,19 +9,19 @@ public class PaymentClass extends PageBase{
     public PaymentClass(WebDriver driver) {super(driver);}
 
 
-
+     // the elements
     private final By Visa = By.xpath("//*[@id=\"form-common\"]/div[1]/div[1]/div/div/div[2]/div/button[1]/div");
     private final By CartNumber = By.id("card_number");
     private final By CartExpiry = By.id("card_expiry");
     private final By CVV_Number = By.id("card_cvv");
 
 
+    // payment
 
     public void Payment() throws InterruptedException {
 
         Thread.sleep(7000);
 
-//        WebElement Visa = new WebDriverWait(driver, Duration.ofSeconds(10)).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"form-common\"]/div[1]/div[1]/div/div/div[2]/div/button[1]")));
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("arguments[0].click();",driver.findElement(Visa));
 
